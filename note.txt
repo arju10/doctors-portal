@@ -1,0 +1,21 @@
+1.      npx crreate-react-app doctor's_portal
+
+install dependencies:
+
+1.      npm install -D tailwindcss
+2.      npx tailwindcss init
+3.      tailwind.config:
+         content: ["./src/**/*.{html,js}"],
+4.      npm install react-router-dom 
+5.      npm i -D daisyui@latest
+6.      tailwind.config:
+         plugins: [require("daisyui")],
+7.      npm install react-icons
+8.      npm install react-day-picker date-fns
+9.      npm install react-hook-form
+10.     npm install firebase
+
+Raf Note:    const form = e.target;
+        const slot = form.slot.value;
+        const name = form.name.value;
+        const email = form.email.value;
