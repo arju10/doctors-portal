@@ -8,6 +8,9 @@ import ContactUs from "../../Pages/Home/ContactUs/ContactUs";
 import Testimonials from "../../Pages/Home/Testimonial/Testimonials";
 import Blogs from "../../Pages/Home/Blog/Blogs";
 import Services from "../../Pages/Home/Services/Services";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Dashboard from "../../Pages/Dashboard/Dashboard/Dashboard";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -47,6 +50,10 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: "/dashboard",
+    element: <PrivateRoute><Dashboard/></PrivateRoute> 
+  }
 ]);
 export default router;
 
