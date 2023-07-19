@@ -14,7 +14,7 @@ install dependencies:
 8.      npm install react-day-picker date-fns
 9.      npm install react-hook-form
 10.     npm install firebase
-
+11.     npm install react-hot-toast
 Raf Note:    const form = e.target;
         const slot = form.slot.value;
         const name = form.name.value;

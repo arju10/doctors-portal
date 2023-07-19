@@ -35,17 +35,22 @@ const Navbar = () => {
         <Link to="/contact-us">Contact Us</Link>
       </li>
    
-   { user?.uid ?  <li>
-        <Link to="/login">Sign out</Link>
+   { user?.uid ? 
+   <>
+     <li>
+        <Link to="/dashboard">Dashboard</Link>
       </li>
+    <li>
+        <button onClick = {handleLogOut} to="/login">Sign out</button>
+      </li>
+   </>
+   
        :
       <li>
         <Link to="/login">Login</Link>
       </li>
       }
-       <li>
-        <Link to="/registration">Registration</Link>
-      </li>
+    
     </React.Fragment>
   );
 
